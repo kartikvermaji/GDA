@@ -18,10 +18,11 @@ const Footer = () => {
             meet new people who have same interest in  photos and
             photoshoots?Join our Community{" "}
           </p>
-          <button className="border-2 lg:mt-10 mt-5 hover:shadow-2xl hover:shadow-slate-500 md:py-2 hover:bg-slate-50 duration-200 hover:text-slate-950  rounded-full lg:text-lg flex lg:space-x-32 lg:px-3">
+          <a href="mailto:garvgarg111@gmail.com"><button className="border-2 lg:mt-10 mt-5 hover:shadow-2xl hover:shadow-slate-500 md:py-2 hover:bg-slate-50 duration-200 hover:text-slate-950  rounded-full lg:text-lg flex lg:space-x-32 lg:px-3">
             <p className="pt-2 p-2  "> Write Your email here...</p>
             <FontAwesomeIcon icon={faArrowRight}  className="md:text-2xl px-4 text-slate-50 bg-orange-500 py-3 rounded-full"/>
-          </button>
+          </button></a>
+          
         </div>
       </div>
 
@@ -34,7 +35,7 @@ const Footer = () => {
             <a href="https://www.instagram.com/gargdefence?utm_source=qr&igsh=eTJubXRmNjd3Zm5n"><FontAwesomeIcon icon={faInstagram} /></a>
             {/* <a href="#"><FontAwesomeIcon icon={faFacebook} /></a> */}
             <a href="https://www.linkedin.com/company/garg-defence/"><FontAwesomeIcon icon={faLinkedin} /></a>
-            <a href="garvgarg111@gmail.com"><FontAwesomeIcon icon={faGoogle} /></a>
+            <a href="mailto:garvgarg111@gmail.com"><FontAwesomeIcon icon={faGoogle} /></a>
         </div>
         <div>
             <h1 className="lg:text-lg">&copy;2024 GDA .All Rights Reserved</h1>
