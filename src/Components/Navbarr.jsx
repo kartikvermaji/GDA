@@ -1,20 +1,20 @@
 import React, { useState } from 'react'
-import gdab from "../assets/gdab (1).jpg"
+import gdab from "../assets/gdaw.jpg"
 import { faBars ,faXmark} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Navbar = () => {
   const[open,setOpen]=useState(false)
   return (
-    <div className=' flex justify-center '>
-    <div className='flex p-2 justify-around w-[100vw] md:w-[90vw] text-xl pt-4  md:pt-8 rounded-full text-slate-50 bg-black'>
+    <div className=' flex justify-center  '>
+    <div className=' bg-slate-50 flex p-2 justify-around w-[100vw] md:w-[90vw] text-xl mt-4  md:mt-6 rounded-full text-black '>
       <div>
         <a href="#home"><img src={gdab} alt="" className='lg:h-12 h-8 ' /></a>
         
         
       </div>
 
-      <div className='lg:space-x-10 space-x-5 font-normal pt-1 md:block hidden text-sm  lg:text-xl'>
+      <div className='lg:space-x-10 space-x-5 font-normal pt-1 md:block hidden text-sm md:pt-2 lg:text-xl'>
        
         <a href="#home" className='hover:text-slate-400 duration-200'>Home</a>
         <a href="#about"className='hover:text-slate-400 duration-200'>About Us</a>
