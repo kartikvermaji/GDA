@@ -51,8 +51,8 @@ const Card = ({ card }) => {
     //   </div>
     // </div>
     <div key={card.id} className="text-slate-50">
-        <div className="h-[60vh] w-[100vw] flex flex-col md:flex-row ">
-            <motion.img src={card.url} alt="" className="md:h-[80vh] md:w-[50vw] h-[40vh] w-[95vw] object-cover rounded-3xl"  />
+        <div className="h-[60vh] w-[100vw] flex flex-col md:flex-row  ">
+            <motion.img src={card.url} alt="" className="md:h-[80vh] md:w-[50vw] h-[40vh] w-[95vw] object-cover rounded-3xl mt-[-8vh] md:mt-0"  />
             <div className="md:w-[40vw] md:mt-20 lg:mt-36 p-4 flex flex-col items-center text-center">
                 <motion.h1 
                  initial={{ opacity: 0,scale:1,y:100 }}
@@ -62,12 +62,12 @@ const Card = ({ card }) => {
                  viewport={{ once: true, amount: 1 }}
                 className="lg:text-5xl text-2xl font-light border-b-2 pb-2 md:pb-8">{card.heading}</motion.h1>
                 <motion.p
-                 initial={{ opacity: 0,scale:1,y:100 }}
+                 initial={{ opacity: 0,scale:1,y:50 }}
                  transition={{ duration:.75,delay:0.15}}
                  animate={{}}
                  whileInView={{ opacity:1,scale:1,y:0 }}
                  viewport={{ once: true, amount: 1 }}
-                 className="lg:text-xl font-thin mt-10">{card.content}</motion.p>
+                 className="lg:text-xl font-thin mt-2 md:mt-10">{card.content}</motion.p>
             </div>
         </div>
     </div>
@@ -88,7 +88,7 @@ const cards = [
     url: "https://wallpapercave.com/wp/wp1896575.jpg",
     heading: "User-driven design approach",
     content:
-      "Our thorough understanding of end-user operational requirements and the ability to customize and optimize our products for a wide range of applications, allows us to develop products that satisfy them the most.",
+      "Our thorough understanding of end-user operational requirements and the ability to customize and optimize our products for a wide range of applications.",
     id: 2,
   },
   {

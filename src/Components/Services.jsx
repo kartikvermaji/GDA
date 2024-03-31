@@ -10,7 +10,7 @@ import { motion } from 'framer-motion'
 const About = () => {
   return (
     <div className='bg-black md:h-[100vh] flex flex-col justify-center items-center text-slate-50' id='services'>
-      <h1 className='text-3xl md:text-5xl mt-5 md:mt-10 p-4 font-thin' >Our Services </h1>
+      <h1 className='text-3xl md:text-5xl mt-5 md:mt-10 p-4 font-thin' >WHY CHOOSE US ? </h1>
       <div className='flex md:flex-row flex-col space-x-4'>
 
         <div className='flex md:flex-col flex-row space-y-4 space-x-4'>

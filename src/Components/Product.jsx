@@ -16,7 +16,7 @@ const Edge = () => {
        animate={{}}
        whileInView={{ opacity:1,y:0 }}
        viewport={{ once: true, amount: 1 }}
-       className="text-3xl md:text-5xl text-center pt-5 md:pt-10 h-[23vh] lg:pt-28 font-thin text-slate-50">
+       className="text-2xl md:text-5xl text-center pt-20 h-[23vh] lg:pt-28 font-thin text-slate-50">
         OUR PRODUCTS
       </motion.h1>
       <motion.p 
@@ -26,7 +26,7 @@ const Edge = () => {
        whileInView={{ opacity:1,y:0 }}
        viewport={{ once: true, amount: 1 }}
       
-       className="text-slate-50 w-[60vw] text-xl text-center mt-10">Our drone lineup includes precision kamikaze, surveillance, loitering munition, and anti-tank drones, each tailored for specific needs. Kamikaze drones offer accuracy with minimal damage, surveillance drones provide real-time data, loitering munitions offer extended flight times, and anti-tank drones target enemy vehicles precisely
+       className="text-slate-50 w-[90vw] lg:w-[60vw] lg:text-xl text-center md:mt-10">Our drone lineup includes precision kamikaze, surveillance, loitering munition, and anti-tank drones, each tailored for specific needs. Kamikaze drones offer accuracy with minimal damage, surveillance drones provide real-time data, loitering munitions offer extended flight times, and anti-tank drones target enemy vehicles precisely
       </motion.p >
 
       <motion.h1
@@ -35,7 +35,7 @@ const Edge = () => {
       animate={{}}
       whileInView={{ opacity:1,y:0 }}
       viewport={{ once: true, amount: 1 }}
-       className="text-slate-50 mt-20 text-5xl font-light">OUR SPECIALIZATION</motion.h1>
+       className="text-slate-50 mt-10 md:mt-20 text-3xl md:text-5xl font-light">OUR SPECIALIZATION</motion.h1>
       </div>
       <motion.div
      
@@ -71,37 +71,37 @@ const HorizontalScrollCarousel = () => {
 const Card = ({ card }) => {
   return (
     <div key={card.id} className="text-slate-950 ">
-      <div className="h-[0vh] w-[100vw] mt-20 flex items-center justify-center">
+      <div className="h-[80vh] w-[100vw] mt-20 flex items-center justify-center">
         <img
           src={card.url}
           alt=""
-          className="h-[100vh] w-[100vw] object-cover rounded-3xl"
+          className= "mt-[-50vh] md:mt-0 h-[40vh] md:h-[100vh] w-[100vw] object-cover rounded-3xl"
         />
-        <div className=" scroll-smooth w-[35vw] mt-[-0vh] ml-[-55vw] flex flex-col items-center text-center absolute bg-black/95 text-slate-50 p-4 rounded-3xl shadow-xl shadow-slate-900 ">
+        <div className=" scroll-smooth w-[90vw] md:w-[40vw] lg:w-[35vw] mt-[30vh] md:mt-[-0vh] lg:mt-[-0vh] md:ml-[-55vw] lg:ml-[-55vw] flex flex-col items-center text-center absolute bg-black/95 text-slate-50 p-4 rounded-3xl shadow-xl shadow-slate-900 ">
           <motion.h1
            initial={{ opacity: 0,y:50 }}
            transition={{ duration:.5,delay:0}}
            animate={{}}
            whileInView={{ opacity:1,y:0 }}
            viewport={{ once: true, amount: 1 }}
-           className="text-5xl border-b-2 pb-6 font-light">{card.heading}</motion.h1>
+           className="lg:text-5xl md:text-2xl text-xl border-b-2 pb-2 lg:pb-6 font-light">{card.heading}</motion.h1>
           <motion.p
             initial={{ opacity: 0,y:50 }}
             transition={{ duration:.5,delay:0.15}}
             animate={{}}
             whileInView={{ opacity:1,y:0 }}
             viewport={{ once: true, amount: 1 }}
-           className="text-lg mt-10 text-left w-[30vw]">{card.p1}</motion.p>
+           className="lg:text-lg text-sm lg:mt-10 mt-5 md:text-left w-[80vw] md:w-[30vw] lg:w-[30vw]">{card.p1}</motion.p>
           <motion.p
             initial={{ opacity: 0,y:50 }}
             transition={{ duration:.5,delay:.25}}
             animate={{}}
             whileInView={{ opacity:1,y:0 }}
             viewport={{ once: true, amount: 1 }}
-           className="text-lg  mt-10 text-left w-[30vw]">{card.p2}</motion.p>
+           className="lg:text-lg text-sm mt-4 lg:mt-10 text-left w-[80vw] hidden lg:block lg:w-[30vw]">{card.p2}</motion.p>
           <motion.button
           
-           className="text-xl font-thin border-2 border-slate-50 px-8 py-2 rounded-full mt-6 hover:bg-slate-50 hover:text-black duration-200">KNOW MORE</motion.button>
+           className="lg:text-xl font-thin border-2 border-slate-50 px-4 py-1 lg:px-8 lg:py-2 rounded-full mt-2 lg:mt-6 hover:bg-slate-50 hover:text-black duration-200">KNOW MORE</motion.button>
         </div>
       </div>
       
