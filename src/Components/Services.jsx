@@ -74,7 +74,7 @@ const About = () => {
             <div className='hover:bg-black/70 absolute md:h-[45vh] h-[35vh] w-[40vw] md:w-[24vw] object-cover rounded-[5vh] md:rounded-[7vh] hover:shadow-xl hover:shadow-slate-500 duration-200 '>
           <div className='absolute md:text-xl font-medium w-[20vw] mt-20 md:mt-28 lg:mt-40 p-2 md:p-4'>
             <p >Navigation and Communication Systems</p>
-            <p className='text-sm text-slate-200 hidden lg:block'>We are also engaged in the development of cutting-edge navigation and communication systems for elite soldiers</p>
+            <p className='text-sm text-slate-200 hidden lg:block'>We are also engaged in the development of cutting-edge navigation and communication systems for soldiers</p>
             </div>
             </div>
             <img src={a3} alt="" className='md:h-[45vh] h-[35vh] w-[40vw] md:w-[24vw] object-cover rounded-[5vh] md:rounded-[7vh] hover:shadow-xl hover:shadow-slate-500 duration-200 ' />
@@ -91,7 +91,7 @@ const About = () => {
             <p >Collaborations with Armed Force</p>
             <p className='text-sm text-slate-200 hidden lg:block'>We have conducted successful trials and collaborations with elite units such as Para SF and other armed forces</p>
             </div>
-            <img src={a4} alt="" className='md:h-[45vh] h-[35vh] w-[40vw] md:w-[24vw] object-cover rounded-[5vh] md:rounded-[7vh] hover:shadow-xl hover:shadow-slate-500 duration-200 ' />
+            <img src={a4} alt="" className='md:h-[45vh] h-[35vh] w-[42vw] md:w-[24vw] object-cover rounded-[5vh] md:rounded-[7vh] hover:shadow-xl hover:shadow-slate-500 duration-200 ' />
             </motion.div>
 
         </div> </motion.div>

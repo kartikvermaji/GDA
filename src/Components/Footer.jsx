@@ -9,14 +9,14 @@ const Footer = () => {
     <div className="lg:h-[60vh] md:h-[80vh]  bg-black text-slate-50 flex flex-col items-center">
       <div className="flex flex-col md:flex-row justify-center md:space-x-28 pt-10 border-b-2 pb-10 w-[90vw] border-slate-50 bg-black text-slate-50 ">
         <div>
-          <h1 className="lg:text-8xl md:text-6xl text-3xl text-orange-500 font-extrabold">Join Our <br /> Community</h1>
+          <h1 className="lg:text-8xl md:text-6xl text-3xl text-orange-500 font-extrabold">Get  <br />Connected </h1>
         </div>
         <div >
           <p className="md:text-lg textsm font-thin">
-            Want to know more about the latest info from our 
-            product? Want to get special discount from us? Or  want to
-            meet new people who have same interest in  photos and
-            photoshoots?Join our Community{" "}
+          Supercharge your business with the power of drones! Shop our extensive drone selection and unlock exclusive deals. Get more for your money, save big, and watch your deliveries take flight – faster, smoother, and more efficient than ever.
+
+
+{" "}
           </p>
           <a href="mailto:garvgarg111@gmail.com"><button className="border-2 lg:mt-10 mt-5 hover:shadow-2xl hover:shadow-slate-500 md:py-2 hover:bg-slate-50 duration-200 hover:text-slate-950  rounded-full lg:text-lg flex lg:space-x-32 lg:px-3">
             <p className="pt-2 p-2  "> Write Your email here...</p>

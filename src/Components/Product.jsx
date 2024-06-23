@@ -35,11 +35,11 @@ const Edge = () => {
       animate={{}}
       whileInView={{ opacity:1,y:0 }}
       viewport={{ once: true, amount: 1 }}
-       className="text-slate-50 mt-10 md:mt-20 text-3xl md:text-5xl font-light">OUR SPECIALIZATION</motion.h1>
+       className="text-slate-50 mt-16 md:mt-20 text-3xl md:text-5xl font-light">OUR SPECIALIZATION</motion.h1>
       </div>
       <motion.div
      
-       className="mt-10">
+       className="mt-[-1vh] lg:mt-10">
       <HorizontalScrollCarousel />
       </motion.div>
       
@@ -53,13 +53,13 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-75%"]);
 
   return (
     <section ref={targetRef} className="relative h-[300vh] bg-black">
       <div className="sticky top-0 flex h-screen items-center overflow-hidden ">
         <motion.div style={{ x }} className="flex gap-4">
-          {cards.map((card) => {
+          {cards.slice(0,4).map((card) => {
             return (<Card card={card} key={card.id} />);
           })}
         </motion.div>
@@ -84,24 +84,24 @@ const Card = ({ card }) => {
            animate={{}}
            whileInView={{ opacity:1,y:0 }}
            viewport={{ once: true, amount: 1 }}
-           className="lg:text-5xl md:text-2xl text-xl border-b-2 pb-2 lg:pb-6 font-light">{card.heading}</motion.h1>
+           className="lg:text-4xl md:text-2xl text-xl border-b-2 pb-2 lg:pb-6 font-light">{card.heading}</motion.h1>
           <motion.p
             initial={{ opacity: 0,y:50 }}
             transition={{ duration:.5,delay:0.15}}
             animate={{}}
             whileInView={{ opacity:1,y:0 }}
             viewport={{ once: true, amount: 1 }}
-           className="lg:text-lg text-sm lg:mt-10 mt-5 md:text-left w-[80vw] md:w-[30vw] lg:w-[30vw]">{card.p1}</motion.p>
+           className="lg:text-base text-sm lg:mt-10 mt-5 md:text-left w-[80vw] md:w-[30vw] lg:w-[30vw]">{card.p1}</motion.p>
           <motion.p
             initial={{ opacity: 0,y:50 }}
             transition={{ duration:.5,delay:.25}}
             animate={{}}
             whileInView={{ opacity:1,y:0 }}
             viewport={{ once: true, amount: 1 }}
-           className="lg:text-lg text-sm mt-4 lg:mt-10 text-left w-[80vw] hidden lg:block lg:w-[30vw]">{card.p2}</motion.p>
+           className="lg:text-base text-sm mt-4 lg:mt-10 text-left w-[80vw] hidden lg:block lg:w-[30vw]">{card.p2}</motion.p>
           <motion.button
           
-           className="lg:text-xl font-thin border-2 border-slate-50 px-4 py-1 lg:px-8 lg:py-2 rounded-full mt-2 lg:mt-6 hover:bg-slate-50 hover:text-black duration-200">KNOW MORE</motion.button>
+           className="lg:text-lg font-thin border-2 border-slate-50 px-4 py-1 lg:px-8 lg:py-2 rounded-full mt-2 lg:mt-6 hover:bg-slate-50 hover:text-black duration-200">KNOW MORE</motion.button>
         </div>
       </div>
       

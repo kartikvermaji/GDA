@@ -40,11 +40,11 @@ const Moto = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 1 }}
       className="flex flex-col items-center">
-        <h1 className='text-3xl md:text-5xl mt-0 lg:mt-5 md:p-4 font-thin'>Our Solutions</h1>
-        <div className="flex flex-col md:flex-row justify-around w-[80vw] mt-10 space-x-5 space-y-4">
+        <h1 className='text-3xl md:text-5xl mt-10 lg:mt-5 md:p-4 font-thin'>Our Solutions</h1>
+        <div className="flex flex-col md:flex-row justify-around w-[80vw] mt-10 lg:space-x-5 space-y-4">
 
         <motion.div
-        initial={{ opacity: 0, y:100 }}
+        initial={{ opacity: 0, y:50 }}
         transition={{ duration: 1.25 }}
         animate={{}}
         whileInView={{ opacity: 1, y: 0 }}

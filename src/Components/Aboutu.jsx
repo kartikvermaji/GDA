@@ -31,7 +31,7 @@ const Aboutu = () => {
                   transition: { delay: 0, duration:.5 },
                 }}
                 viewport={{ once:true, amount: 0.5 }}
-                 className='lg:text-6xl text-2xl font-semibold  lg:mt-10'>Leading the Future of National Security</motion.h1>
+                 className='lg:text-5xl text-2xl font-semibold  lg:mt-10'>Leading the Future of National Security</motion.h1>
 
 
 <motion.img 

@@ -4,10 +4,13 @@ import { useRef } from "react";
 const Edge = () => {
   return (
     <div className="bg-black">
-      <h1 className="text-3xl md:text-5xl text-center pt-5 md:pt-10 h-[15vh]  font-thin text-slate-50">
+      <h1 className="text-3xl  md:text-5xl text-center pt-12 md:pt-10 h-[15vh]  font-thin text-slate-50">
         Our Edge
       </h1>
+      <div >
       <HorizontalScrollCarousel />
+      </div>
+      
     </div>
   );
 };
@@ -18,8 +21,8 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
 
+  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-67%"]);
   return (
     <section ref={targetRef} className="relative h-[300vh] bg-black">
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
